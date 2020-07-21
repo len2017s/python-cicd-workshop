@@ -15,3 +15,7 @@ workflows:
       - run:
          name: Run Tests
          command: ~/.local/bin/pytest
+      - run:
+          name: Install Python Dependencies
+          command: |
+            pip install --user --no-cache-dir -r requirements.txt
