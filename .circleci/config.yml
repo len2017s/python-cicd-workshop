@@ -11,3 +11,7 @@ workflows:
     # Run the welcome/run job in its own container
     jobs:
       - welcome/run
+
+      - run:
+         name: Run Tests
+         command: ~/.local/bin/pytest
